@@ -14,5 +14,5 @@ This project uses cutting-edge AI models to generate captions for images! 🤖
 2. **Click Generate:** Hit the "Generate Caption" button to see the magic happen!
 
 AI Models Used
-- [https://huggingface.co/Salesforce/blip2-opt-6.7b]([url](https://huggingface.co/Salesforce/blip2-opt-6.7b)https://huggingface.co/Salesforce/blip2-opt-6.7b)
-- [https://huggingface.co/google/vit-base-patch16-224]([url](https://huggingface.co/google/vit-base-patch16-224)https://huggingface.co/google/vit-base-patch16-224)
+- [https://huggingface.co/Salesforce/blip2-opt-6.7b](https://huggingface.co/Salesforce/blip2-opt-6.7b)
+- [https://huggingface.co/google/vit-base-patch16-224](https://huggingface.co/google/vit-base-patch16-224)
