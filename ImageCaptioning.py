@@ -19,7 +19,7 @@ def image_caption(image):
     logits = outputs.logits
     # model predicts one of the 1000 ImageNet classes
     predicted_class_idx = logits.argmax(-1).item()
-    print("Predicted class:", model.config.id2label[predicted_class_idx])
+    st.write("Predicted class:", model.config.id2label[predicted_class_idx])
     pred_class = model.config.id2label[predicted_class_idx]
 
 
@@ -37,7 +37,7 @@ def image_caption(image):
     inputs = processor(raw_image, text, return_tensors="pt")
 
     out = model.generate(**inputs)
-    print(processor.decode(out[0], skip_special_tokens=True))
+    st.write(processor.decode(out[0], skip_special_tokens=True))
 
     # unconditional image captioning
     inputs = processor(raw_image, return_tensors="pt")
@@ -47,4 +47,4 @@ def image_caption(image):
 
 img_url = 'https://farm5.staticflickr.com/4022/4684418248_197a995011_z.jpg'
 image = Image.open(requests.get(img_url, stream=True).raw)
-print(image_caption(image))
+image_caption(image)
