@@ -1,7 +1,8 @@
 # Image-Captioning
 
 This project uses cutting-edge AI models to generate captions for images! 🤖
-##📝 Click [HERE!](http://localhost:8501/) for the demo
+
+## 📝 Click [HERE!](http://localhost:8501/) for the demo
 
 ## 🌟 Features
 
