@@ -62,8 +62,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     try {
                         const response = await fetch('/caption-image', {
                             method: 'POST',
-                            body: formData
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ image: file })
                         });
+                        
 
                         if (response.ok) {
                             const data = await response.json();
