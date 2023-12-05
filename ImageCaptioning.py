@@ -1,7 +1,9 @@
+import streamlit as st
 import requests
 from PIL import Image
 from transformers import BlipProcessor, BlipForConditionalGeneration, ViTImageProcessor, ViTForImageClassification
 
+st.title('hello')
 
 #Load Google IMage 
 def image_caption(image):
