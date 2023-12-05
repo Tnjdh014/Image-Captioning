@@ -4,6 +4,7 @@ from PIL import Image
 from transformers import BlipProcessor, BlipForConditionalGeneration, ViTImageProcessor, ViTForImageClassification
 
 st.title('hello')
+uploaded_file = st.file_uploader("Choose a file", type=["csv", "txt", "png", "jpg", "pdf"])
 
 #Load Google IMage 
 def image_caption(image):
@@ -47,4 +48,4 @@ def image_caption(image):
 
 img_url = 'https://farm5.staticflickr.com/4022/4684418248_197a995011_z.jpg'
 image = Image.open(requests.get(img_url, stream=True).raw)
-image_caption(image)
+# image_caption(image)
