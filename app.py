@@ -5,7 +5,7 @@ from ImageCaptioning import image_caption
 
 app = Flask(__name__)
 
-
+#rakin was here
 @app.route('/caption-image', methods=['POST', 'GET'])
 def caption_image():
     try:
